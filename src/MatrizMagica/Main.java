@@ -49,6 +49,11 @@ public class Main {
             }
             System.out.println("fgf");
         }
+        ////////////esto es una prueba aleatria de un vector///////////////
+        int[] vector = new int[5];
+        vector[0]= 5;
+        
+        
 
     }
 

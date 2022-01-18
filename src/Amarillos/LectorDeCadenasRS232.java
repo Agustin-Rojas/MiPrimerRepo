@@ -32,23 +32,36 @@ se utilizan las siguientes funciones de Java Substring(), Length(), equals().*/
         
         Scanner leer= new Scanner(System.in, "ISO-8859-1").useLocale(Locale.US);
         
+      
         
-        int correctos=0;
-        int incorrectos=0;
-        boolean flag=false;
         
-        while(flag==false){
+        int correctos = 0;
+        int incorrectos = 0;
+        boolean flag = false;
+
+        while (flag == false) {
             System.out.println("ingrese la cadena");
-            String cadena= leer.next();
-            
-            if( cadena.length()!= 5){
-                if()
-            }else{
-            incorrectos++;}
-            
+            String cadena = leer.next();
+
+            if (cadena.length() == 5) {
+
+                if (cadena.substring(0,1).equals("X") && cadena.substring(4).equals("O")) {
+                    correctos++;
+                } else if (cadena.equals("&&&&&")) {
+                    flag = true;
+                } else {
+                    incorrectos++;
+                }
+            } else {
+                incorrectos++;
+            }
+
         }
-        
-        
+
+        System.out.println("        INFORME        ");
+        System.out.println("Cadenas incorrectas: " + incorrectos);
+        System.out.println("Cadenas CORRECTAS: " + correctos);
+
     }
-    
+
 }
