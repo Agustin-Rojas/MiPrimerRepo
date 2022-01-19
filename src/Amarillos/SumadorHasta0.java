@@ -26,12 +26,14 @@ número es negativo no debe sumarse. Nota: recordar el uso de la sentencia break
         Scanner leer= new Scanner(System.in, "ISO-8859-1").useLocale(Locale.US);
         
         int Sumador= 0;
-        int fin = 1;
-        while( fin != 0) {
+        
+        
+        for (int i = 0; i < 20; i++) {
             System.out.println("Ingrese un numero");
             int n= leer.nextInt();
             if (n==0){
                 System.out.println("Se capturo el numero 0");
+                
             break;}else if (n>0){
             Sumador=Sumador+n;
             System.out.println("La suma es: " + Sumador);}
