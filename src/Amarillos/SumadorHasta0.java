@@ -34,7 +34,8 @@ número es negativo no debe sumarse. Nota: recordar el uso de la sentencia break
             if (n==0){
                 System.out.println("Se capturo el numero 0");
                 
-            break;}else if (n>0){
+            break;
+            }else if (n>0){
             Sumador=Sumador+n;
             System.out.println("La suma es: " + Sumador);}
             
